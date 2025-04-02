@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3> CREATE NEW TASK</h3>
+    <a href="ManageTask.html">ManageTask</a>
+    <hr/>
+    <a href="PMDashboard.html">Dashboard</a>
+    <hr />
+    <form method="post">
+        Task id: <input type="number" min="1" id="taskid" name="tid" />
+        <br />
+        Title: <input type="text" id="tt" name="tt" />
+        <br />
+        Description: <textarea id="tdesc" name="tdesc" rows="4"></textarea>
+        <br />
+        Start Date: <input type="date" id="std" name="std" />
+        <br />
+        End Date: <input type="date" id="etd" name="etd" />
+        <br />
+        Duration: <input type="number" min="1" step="1" name="tdu" id="tdu" />
+        <br />
+        Assign To: <select id="tassindto" name="tassigendto">
+            <option value="1"> Chinnu</option>
+            <option value="2"> Ameena</option>
+            <option value="3"> Salva</option>
+        </select>
+        <br />
+        Status:
+        <select id="tstatus" name="tstatus">
+            <option value="1">OPEN</option>
+            <option value="2">ON-HOLD</option>
+        </select>
+        <br />
+        <input type="submit" value="Add Task" />
+    </form>
+</body>
+</html>

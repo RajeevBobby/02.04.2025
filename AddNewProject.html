@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Add New Project</h3>
+    <a href="admin.html">Dashboard</a>
+    <hr/>
+    <form method="post">
+        <table>
+            <tr>
+                <td>
+                    Project id:
+                </td>
+                <td>
+                    <input type="number" id="pid" name="pid" min="1" required />
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Projec Title:
+
+                </td>
+                <td>
+                    <input type="Text" id="ptitle" name="ptitle" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Start Date:
+                </td>
+                <td>
+                    <input type="date" name="psdate" id="psdate" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    End Date:
+                </td>
+                <td>
+                    <input type="date" name="pedate" id="pedate" required />
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Duration:
+                </td>
+                <td>
+                    <input type="number" name="pdur" id="pdur" min="10" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    PM Name:
+                </td>
+                <td>
+                    <select id="selPm" name="selPm">
+                        <option value="1">Rajeev</option>
+                        <option value="2">Chinnu</option>
+                        <option value="3">Harshi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="submit" ADD NEW />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
