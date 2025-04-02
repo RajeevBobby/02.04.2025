@@ -30,6 +30,14 @@
                 </tr>
                 <tr>
                     <td>
+                        User Name:
+                    </td>
+                    <td>
+                        <input type="text" id="uname" name="uname" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         User Role:
                     </td>
                     <td>
@@ -39,20 +47,28 @@
                             <option>Q&A</option>
                             <option>User</option>
                         </select>
-                        </tr>
-                    </td>
+                </tr>
+                </td>
                 <tr>
                     <td>
                     </td>
                     <td>
-                        <input type="submit" value="add new" />
+                        <input type="submit" value="Add New" />
+                        <input type="reset" value="Reset Form">
                     </td>
 
 
                 </tr>
-        </form>
+</form>
         </table>
     </div>
-
+    <div>
+        <h5>Error List: </h5>
+        <ul>
+            <li>Name should be unique</li>
+            <li>Password must be 6 or more char length</li>
+            <li> Role information is required</li>
+        </ul>
+    </div>
 </body>
 </html>
